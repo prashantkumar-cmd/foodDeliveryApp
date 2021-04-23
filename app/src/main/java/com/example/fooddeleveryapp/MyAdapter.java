@@ -11,8 +11,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public String[] data;
-    public MyAdapter(String[] data){
+    public int[] imgs;
+    public MyAdapter(String[] data,int[] imgs){
         this.data=data;
+        this.imgs=imgs;
     }
     @NonNull
     @Override
@@ -26,6 +28,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         String title=data[position];
         holder.textView.setText(title);
+        int image=imgs[position];
+        holder.img.setImageResource(image);
     }
 
     @Override

@@ -15,6 +15,12 @@
         android:layout_height="200dp"
         android:id="@+id/img"
         />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_bookmark_24"
+        android:layout_alignParentEnd="true"
+        />
 
 
 
@@ -68,10 +74,10 @@
         android:layout_alignEnd="@id/img"
         android:layout_marginEnd="20sp"
         android:background="@drawable/backgrounddark"
-        android:drawableEnd="@drawable/ratestar"
+        android:drawableEnd="@drawable/ic_baseline_star_rate_24"
         android:paddingLeft="3dp"
         android:paddingEnd="3dp"
-        android:text="4.5"
+        android:text="4.6"
         android:textColor="@color/white"
         android:textSize="17sp"
         android:textStyle="bold" />
